@@ -93,8 +93,8 @@ desc4 <- ifelse(grepl("Body", var.names), "of body",
 
 desc5 <- ifelse(grepl("Jerk", var.names), "jerk", "acceleration")
 
-desc6 <- ifelse(grepl("Acc", var.names), "from the accelerator raw signal",
-         ifelse(grepl("Gyro", var.names), "from the accelerator raw signal", ""
+desc6 <- ifelse(grepl("Acc", var.names), "from the accelerometer raw signal  ",
+         ifelse(grepl("Gyro", var.names), "from the gyroscope raw signal  ", ""
          ))
 
 var.description <- paste(var.names, ":", desc1, desc2, desc3, desc4, desc5, desc6)

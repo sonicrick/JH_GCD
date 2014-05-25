@@ -348,8 +348,8 @@ desc4 &lt;- ifelse(grepl(&quot;Body&quot;, var.names), &quot;of body&quot;, ifel
 
 desc5 &lt;- ifelse(grepl(&quot;Jerk&quot;, var.names), &quot;jerk&quot;, &quot;acceleration&quot;)
 
-desc6 &lt;- ifelse(grepl(&quot;Acc&quot;, var.names), &quot;from the accelerator raw signal&quot;, 
-    ifelse(grepl(&quot;Gyro&quot;, var.names), &quot;from the accelerator raw signal&quot;, &quot;&quot;))
+desc6 &lt;- ifelse(grepl(&quot;Acc&quot;, var.names), &quot;from the accelerometer raw signal  &quot;, 
+    ifelse(grepl(&quot;Gyro&quot;, var.names), &quot;from the gyroscope raw signal  &quot;, &quot;&quot;))
 
 var.description &lt;- paste(var.names, &quot;:&quot;, desc1, desc2, desc3, desc4, desc5, 
     desc6)
